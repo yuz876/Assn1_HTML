@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset = "UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+
+</head>
+<body>
+    <div class="signup_title">Sign Up</div>
+
+
+      
+    <table class="signuptable" id="signuptable">
+
+        <form class="signupform" id="signupform" >
+            <tr>
+                <td class="signuptablecol"></td>
+                <td class="signuptablecol"></td>
+                <td class="signuptablecol"></td>
+                <td class="signuptablecol"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input class="signuptablecolhalfwidth" type="text" id="id_userfirstname" name="userfirstname"  placeholder ="First Name" required/></input>
+                </td>
+                <td colspan="2">
+                    <input class="signuptablecolhalfwidth" type="text" id="id_userlastname" name="userlastname" placeholder ="Last Name" required/></input>
+                </td>
+            </tr> 
+            <tr>
+                <td colspan="4">
+                    <input class="signuptablecolwholewidth" type="text" id="id_mobile number" name="usermobilenumber" placeholder ="Mobile No." required/></input>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input class="signuptablecolwholewidth" type="email" id="id_useremail" pattern=".+@.+\..+" size="30" name="useremail" placeholder ="Email"required></input>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input class="signuptablecolhalfwidth" type="password" id="id_userpwd" name="userpwd" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*" 
+                        minlength="8"  maxlength="30"  placeholder ="Password" required></input> 
+                </td>
+                <td colspan="2">
+                    <input class="signuptablecolhalfwidth" type="password" id="id_userconfirmpwd" name="userconfirmpwd" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*" 
+                        minlength="8"  maxlength="30" placeholder ="Confirm Password"required></input>  
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <input type="checkbox" id="checkbox" name="agree"> </input>
+                    <label for="agree">
+                        I Agree  
+                    </label>
+                </td>
+                <td colspan="3">
+                    <span class="termsandconditionsprompt">By clicking <div class="register_word"> &nbsp Register &nbsp</div>, you agree to the <a class="termsandconditions" target="_blank" href="tryit.asp?filename=trycss_text">Terms and Conditions</a> set out by this site, including our cookie use.</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn1" id = "register" type="submit">Register</button>
+                </td>
+                <td colspan="2">
+                    <button class="btn2" id = "signin" type="submit">Sign In</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+    </div>
+
+       
+
+</body>
+
+</html>
