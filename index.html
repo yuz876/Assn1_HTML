@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="signup.css">
-    <script src="signup.js"></script>
+    
 
 </head>
 <body>
@@ -54,7 +54,7 @@
             </tr>
             <tr>
                 <td colspan="1">
-                    <input type="checkbox" id="checkbox" name="agree"> </input>
+                    <input type="checkbox" id="checkbox" name="agree" required> </input>
                     <label for="agree">
                         I Agree  
                     </label>
@@ -71,12 +71,17 @@
                     <button class="btn2" id = "signin" type="submit">Sign In</button>
                 </td>
             </tr>
+            <tr>
+                <td colspan="4">
+                    <p id="registeredOrSignedIn"></p>
+                </td>
+            </tr>
         </form>
     </table>
     </div>
 
        
-
+    <script src="signup.js"></script>
 </body>
 
 </html>
